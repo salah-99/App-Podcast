@@ -1,0 +1,340 @@
+.logo img{
+  position: absolute;
+  width: 10%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.bg{
+  width: 100%;
+  height: 345px;
+  background-image: url("bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg h2 {
+  position: absolute;
+  font-family: 'Brandon Grotesque Black';
+  color: white;
+  margin-left: 35%;
+  margin-top: 3%;
+  font-size: 70px;
+}
+.gif img{
+  margin-top: 20px;
+  width: 345px;
+  margin-left: 40.9%;
+  height: auto;
+  transition:all 1.2s ease-in-out;
+  -webkit-transition:all 1.2s ease-in-out;
+  -moz-transition:all 1.2s ease-in-out;
+  -ms-transition:all 1.2s ease-in-out;
+  -o-transition:all 1.2s ease-in-out;
+}
+
+.gif img:hover {
+transform:rotate(720deg) scale(1);
+-webkit-transform:rotate(720deg) scale(0.5);
+-moz-transform:rotate(720deg) scale(0.5);
+-ms-transform:rotate(720deg) scale(0.5);
+-o-transform:rotate(720deg) scale(0.5);
+}
+.gif h3 {
+  font-family: 'Brandon Grotesque' ;
+  color: #7f18a8;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70px;
+}
+.sec{
+  position: relative;
+  max-width: 1000px;
+  height: 1000px;
+  margin:auto ;
+  top: 295px;  
+}
+
+.im{
+  float: left;
+  width: 40%;
+}
+
+.im img{
+   width: 100%;
+}
+
+.des{
+  float: right;
+  width: 50%;
+}
+
+.p-title{
+  color:#fff;
+  font-size: 52px !important;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+#container{
+  max-width: 1080px;
+  min-height: 500px; 
+  margin: auto;
+  margin-top: 90px; 
+}
+
+.part{
+  float: left;
+  width: 30%;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+#container .part h5 {
+  font-family: 'Brandon Grotesque Light';
+  color: #e7a7e4;
+  margin-left: 10px;
+}
+#container .part h1 {
+  font-family: 'Brandon Grotesque Black';
+  color: #53145c;
+  font-size: 30px;
+  margin-left: 10px;
+}
+#container .part h4 {
+  font-family: 'Brandon Grotesque Black';
+  color: #b039c0;
+  font-size: 19px;
+  margin-left: 10px;
+}
+#container .part p {
+  font-family: 'Brandon Grotesque Light';
+  color: #a289b6;
+  font-size: 20px;
+  margin-left: 10px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600;);
+.snip1573 {
+  background-color: rgb(90, 5, 93);
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.snip1573 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.snip1573:before,
+.snip1573:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #692b57;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: '';
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.snip1573:before {
+  -webkit-transform: skew(45deg) translateX(-155%);
+  transform: skew(45deg) translateX(-155%);
+}
+
+.snip1573:after {
+  -webkit-transform: skew(45deg) translateX(155%);
+  transform: skew(45deg) translateX(155%);
+}
+
+.snip1573 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1573 figcaption {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  -webkit-box-shadow: 0 0 10px #692b57;
+  box-shadow: 0 0 10px #692b57;
+}
+
+.snip1573 h3 {
+  background-color: #700751;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.snip1573 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.snip1573:hover > img,
+.snip1573.hover > img {
+  opacity: 0.5;
+}
+
+.snip1573:hover:before,
+.snip1573.hover:before {
+  -webkit-transform: skew(45deg) translateX(-55%);
+  transform: skew(45deg) translateX(-55%);
+}
+
+.snip1573:hover:after,
+.snip1573.hover:after {
+  -webkit-transform: skew(45deg) translateX(55%);
+  transform: skew(45deg) translateX(55%);
+}
+
+.snip1573:hover figcaption,
+.snip1573.hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+
+h1{
+  color :#3e086d;
+}
+
+.clean{
+  clear: both;
+}
+
+/* .bg{
+  max-width: 100%;
+  height: 600px;
+  background-image: url("bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #9f59db;
+  box-shadow: 5 5 5 5;
+  border-radius: 4px;
+}
+
+ .btn {
+  width: 15%;
+  padding: 12px 20px;
+  margin-left: 40%;
+  box-sizing: border-box;
+  border: 2px solid #9f59db;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #9f59db;
+  background-color: white;
+
+}
+
+
+
+
+
+
+
+
+input[type=text]:hover{
+	box-shadow: 0px 2px 8px 5px #9f59db; 
+}
+
+.btn:hover{
+	box-shadow: 0px 2px 8px 5px #9f59db; 
+}
+.add{
+      
+	  width: 50%;
+	  margin: auto;
+	  margin-top: 100px;
+	  margin-bottom: 150px;
+
+}
+footer{
+	width: 100%;
+  height: 512px;
+  background-image: url("footer.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+footer p {
+  position: absolute;
+  font-family: 'Brandon Grotesque Black';
+  color: #b7a8b9;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24%;
+  margin-left: 44%;
+}
+footer h3 {
+  position: absolute;
+  font-family: 'Brandon Grotesque Black';
+  color: #b7a8b9;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 46%;
+}
+footer img {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 40%;
+}
+footer h5 {
+  position: absolute;
+  font-family: 'Brandon Grotesque Black';
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 16.5%;
+  margin-left: 47%;
+}
