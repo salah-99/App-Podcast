@@ -22,8 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
+    background-color: red;
 }
  .audio-episodes button {
         background: transparent;
@@ -74,9 +73,11 @@
                     </li>
                 </div>
             </div>
-
-              <div class="audio-episodes">  <button onclick="Prev()"> <i class="fas fa-chevron-left"></i></button> <audio controls src="https://traffic.libsyn.com/secure/briankeanebusiness/Business_Podcast_1.mp3?dest-id=970568%22%3E"> </audio> <button onclick="Next()"><i class="fas fa-chevron-right"></i></button>  </div> </div>
-
+            <article>
+                <audio class="audio" controls="controls">
+                    <source type="audio/mpeg" src="david-lucas.mp3">
+                </audio>
+            </article>
         </section>
     </div>
     ,<span></span>
@@ -97,7 +98,11 @@
     <h5>SAMPSPACE</h5>
     <p>&copy; 2020 Followrs of SAMP</p>
   </footer>
-  <script src="add1.js"></script>
+  <script>
+      $('audio').mediaelementplayer({
+	features: ['playpause','progress','current','tracks','fullscreen']
+});
+  </script>
 
 </body>
 </html>
