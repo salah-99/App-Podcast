@@ -10,33 +10,32 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
 
     <title>SAMPodcast</title>
-
-
-
-
     <style>
         
-
-
-.audio-episodes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-}
- .audio-episodes button {
+        .audio-episodes button {
         background: transparent;
         border: none;
         margin: 0 30px;
-        color: #43086d;
+        color: #fff;
         font-size: 2em;
         cursor: pointer;
-    
-}
+    }
+
+        .audio-episodes{
+
+            position: absolute;
+            left: 950px;
+            top: 857px;
+
+        }
+         
+         .audio-episodes audio{
 
 
-
-
+               position: relative;
+               top: 16px;
+               
+          }
 
     </style>
 </head>
@@ -73,12 +72,8 @@
                     </li>
                 </div>
             </div>
-            <article>
-                <audio class="audio" controls="controls">
-                    <source type="audio/mpeg" src="david-lucas.mp3">
-                </audio>
-            </article>
         </section>
+        <div class="audio-episodes">  <button onclick="Prev()"> <i class="fas fa-chevron-left"></i></button> <audio controls src="david-lucas.mp3"> </audio> <button onclick="Next()"><i class="fas fa-chevron-right"></i></button>  </div> 
     </div>
     ,<span></span>
     <div class="clean"></div>
