@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web">
     <link rel="stylesheet" href="style2.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
-
+<script src="page1.js"></script>
     <title>SAMPodcast</title>
     <style>
         
@@ -20,8 +20,31 @@
         font-size: 2em;
         cursor: pointer;
     }
+    /* audio:hover, audio:focus, audio:active
+        {
+        -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+        }
 
-        .audio-episodes{
+
+        audio
+        {
+        -webkit-transition:all 0.5s linear;
+        -moz-transition:all 0.5s linear;
+        -o-transition:all 0.5s linear;
+        transition:all 0.5s linear;
+        -moz-box-shadow: 2px 2px 4px 0px #006773;
+        -webkit-box-shadow:  2px 2px 4px 0px #006773;
+        box-shadow: 2px 2px 4px 0px #006773;
+        -moz-border-radius:7px 7px 7px 7px ;
+        -webkit-border-radius:7px 7px 7px 7px ;
+        border-radius:7px 7px 7px 7px ;
+        } */
+                .audio-episodes{
 
             position: absolute;
             left: 950px;
@@ -54,17 +77,17 @@
             </div>
             <div class="des">
 
-                <h1 class="p-title" id="titr">LIVE in Denver with Johnny Pemberton</h1>
-                <h4 id="tem">Fev 12 2020 12:00 AM</h4>
-                <h4 id="heur">1h:41min:42sec</h4>
+                <h1 class="p-title" id="nameip">LIVE in Denver with Johnny Pemberton</h1>
+                <h4 id="date">Fev 12 2020 12:00 AM</h4>
+                <h4 id="duree">1h:41min:42sec</h4>
                 <h3 id="hach">#Comedianplace</h3>
                 <h3 id="celb">Doland Tramp , Sam louis</h3>
                 <div class="cont"> 
-                    <p id="par">
+                    <p id="desc">
                         David Lucas, comedian and host of Brothers in Cursive, joins the DTFH!
                         This episode is brought to you by:
                     </p>
-                    <li id="poin">
+                    <li id="audio">
                        Squarespace - Use offer code: DUNCAN to save 10% on your first site.
                     </li>
                     <li id="poin2">
@@ -73,19 +96,22 @@
                 </div>
             </div>
         </section>
-        <div class="audio-episodes">  <button onclick="Prev()"> <i class="fas fa-chevron-left"></i></button> <audio controls src="david-lucas.mp3"> </audio> <button onclick="Next()"><i class="fas fa-chevron-right"></i></button>  </div> 
+        <div class="audio-episodes">  
+            <button onclick="previous()"> <i class="fas fa-chevron-left"></i></button> 
+            <audio id="myaudio" controls autoplay src="1.mp3"> </audio>
+             <button onclick="next()"><i class="fas fa-chevron-right"></i></button>  </div> 
     </div>
     ,<span></span>
     <div class="clean"></div>
     <div class="add">
-        <input type="text" id="name"  placeholder="ADD EPISODE NAME">
         <input type="text" id="time"  placeholder="ADD TIME AND DATE">
-        <input type="text" id="duré" placeholder="ADD DURATION">
-        <input type="text" id="desc"  placeholder="ADD EPISODE DESCRIPTION">
-        <input type="text" id="tag"  placeholder="ADD TAGS">
+        <input type="text" id="name"  placeholder="ADD EPISODE NAME">
+        <input type="text" id="dure" placeholder="ADD DURATION">
+        <input type="text" id="descr"  placeholder="ADD EPISODE DESCRIPTION">
+        <input type="text" id="tags"  placeholder="ADD TAGS">
         <input type="text" id="guest"  placeholder="ADD GUESTS">
-        <input type="text" id="audio"  placeholder="ADD AUDIO URL">
-       <button class="btn" onclick="submit();">submit</button>
+        <input type="text" id="link"  placeholder="ADD AUDIO URL">
+       <button class="btn" onclick="queue()">submit</button>
       </div>
   <footer>
     <h3>POWERED BY</h3>
@@ -93,11 +119,7 @@
     <h5>SAMPSPACE</h5>
     <p>&copy; 2020 Followrs of SAMP</p>
   </footer>
-  <script>
-      $('audio').mediaelementplayer({
-	features: ['playpause','progress','current','tracks','fullscreen']
-});
-  </script>
+ 
 
 </body>
 </html>
