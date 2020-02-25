@@ -15,13 +15,13 @@ class Element{
 }
 class Queue{
   constructor(){
-      this.pointer = this.holder = this.bottom = null;
+      this.pointer = this.holder = this.bottom = new Element("1h:41min:42sec","dFev 12 2020 12:00 AM","LIVE in Denver with Johnny Pemberton","David Lucas, comedian and host of Brothers in Cursive, joins the DTFH! This episode is brought to you by:","1.mp3","#Comedianplace","Doland Tramp" , "Sam louis");;
   }
   queue(duree,date,namepi,descepi,linkaudio,tags,invites){
-      if(!this.bottom){
-          this.pointer = this.holder = this.bottom = new Element(duree,date,namepi,descepi,linkaudio,tags,invites,);
-          return;
-      }
+      // if(!this.bottom){
+      //     this.pointer = this.holder = this.bottom = new Element(duree,date,namepi,descepi,linkaudio,tags,invites,);
+      //     return;
+      // }
       let temp = this.holder;
       this.holder = this.holder.next = new Element(duree,date,namepi,descepi,linkaudio,tags,invites,);
       this.holder.previous = temp;
@@ -61,29 +61,22 @@ class Queue{
               document.getElementById("celb").innerHTML = this.pointer.invites;
           
       }
-      return "No Data Yet";
+     
   }
 }
 
   
-// Converting the number of millisecond in date string 
+
 
 
 let qu = new Queue();
 
 function queue(){
   let d = Date(Date.now()); 
-//   var vid = document.getElementById("myaudio");
-// vid.duration
   qu.queue(document.getElementById('dure').value,d.toString(),document.getElementById('name').value,
   document.getElementById('descr').value,document.getElementById('link').value,document.getElementById('tags').value,document.getElementById('guest').value);
-  //  qu.queue("1","2","3","4","5","6","7");
+  
   qu.show();
-}
-
-function dequeue(){
-  qu.dequeue();
-  document.getElementById('screen').innerHTML = qu.show();
 }
 
 function next(){
